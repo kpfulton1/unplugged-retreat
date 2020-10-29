@@ -86,12 +86,64 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*===========================================================================
+                                    ** General Styles **
+=============================================================================*/
 
-/*------------------------------Base Header - Footer Styles ------------------*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+
+p {
+    font-size: .875em;
+    line-height: 1.285;
+}
+
+img {
+
+ }
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+}
+
 .content-wrapper {
-  flex-basis: 90%;
+  width: 90%;
   margin: 50px 0;
 }
+/*------------------------------Base Header - Footer Styles ------------------*/
 
 header,
 footer {
@@ -116,7 +168,7 @@ header .content-wrapper {
   }
 
 .header-divider {
-  flex-basis: 100%;
+  width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
 }
@@ -126,15 +178,13 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  flex-basis: 60%;
+  width: 60%;
   }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  flex-basis: 100%;
-  list-style: none;
-
+  width: 100%;
 }
 
 header nav ul li {
@@ -156,7 +206,7 @@ footer p {
 }
 
 footer .content-wrapper {
-  flex-basis:55%;
+  width:55%;
   margin: 50px 0;
 }
 
@@ -197,7 +247,6 @@ main {
 
                                     /* Aside */
 
-}
 
 aside {
   display: flex;
@@ -212,7 +261,6 @@ aside .content-wrapper {
 
                                   /* Features */
 
-}
 
 .features {
   display: flex;
@@ -226,7 +274,7 @@ aside .content-wrapper {
 }
 
 .features article {
-  flex-basis: 63%;
+  width: 63%;
   padding: 30px 0;
 }
 
@@ -242,7 +290,7 @@ aside .content-wrapper {
 }
                                 /* Reviews */
 
-.reviews{
+.reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -253,9 +301,10 @@ aside .content-wrapper {
 }
 
 .reviews h3 {
-  flex-basis: 55%;
+  width: 55%;
   margin: 20px 0;
 }
+
 /*============================ About Page ====================================*/
 
 
@@ -287,7 +336,7 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
-.faq .content-wrapper{
+.faq .content-wrapper {
   margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
@@ -432,7 +481,7 @@ aside .content-wrapper {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
-    flex-flow: nowrap;
+    flex-flow: row wrap;
   }
 
   aside .content-wrapper .form-description,
@@ -469,11 +518,7 @@ aside .content-wrapper {
 
                     /*Footer*/
 
-footer {
-  flex-direction: row;
-}
-
-footer .content-wraper {
+footer .content-wrapper {
   width:65%;
   margin: 100px 0;
 }
@@ -518,9 +563,6 @@ footer .copyright {
 
 /*============================FAQ Page =====================================*/
 
-header {
-  padding: 15px 0;
-}
 
 .faq .content-wrapper {
   justify-content: space-between;
@@ -533,10 +575,14 @@ header {
 .faq h2 {
   width: 100%;
 }
-
+}
 
 @media only screen and (min-width: 1200px) {
 /*Desktop syles here*/
+
+header {
+  padding: 15px 0;
+}
 
 .content-wrapper{
   max-width: 960px;
