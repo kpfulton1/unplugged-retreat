@@ -113,9 +113,9 @@ a {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
   font-weight: 500;
-}
+  font-size: 1.875em;
+  }
 
 h3,
 h4 {
@@ -132,11 +132,11 @@ p {
 }
 
 img {
-
+  width: 100%;
  }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -170,6 +170,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  }
+
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
 .header-divider {
@@ -245,11 +253,11 @@ footer .copyright {
 /*------------------------------Mobile styles - Homepage ---------------------*/
 
                                     /* Hero Area */
-main {
-
-}
 
 .hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -273,7 +281,6 @@ aside {
   flex-flow: row wrap;
 
 }
-
 
 aside .form {
   margin-top: 30px;
@@ -305,10 +312,11 @@ input[type=button] {
 
 
 .features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
 }
 
 .features h2 {
@@ -531,6 +539,7 @@ input[type=button] {
 
   header nav ul {
     justify-content: space-between;
+
   }
 
   .header-divider {
@@ -538,6 +547,9 @@ input[type=button] {
   }
 
                         /*Hero Area*/
+.hero-area {
+  min-height: 600px;
+}
 
 .hero-area h1 {
   font-size: 3em;
@@ -590,6 +602,7 @@ input[type=button] {
   width: 85%;
 }
 
+.reviews article figure,
 .reviews article div {
   width:49%;
 }
@@ -707,7 +720,7 @@ p {
 
 .hero-area h1 {
   font-size: 3.75em;
-  width: 60%;
+  width: 80%;
 }
                                 /*Aside*/
 
@@ -736,12 +749,13 @@ aside .content-wrapper .form {
 
                                 /*Reviews*/
 
-.reviews h2 {
-  padding-bottom: 50px;
-}
 
 .reviews article div {
   width:42%
+}
+
+.reviews h2 {
+  padding-bottom: 50px;
 }
 
 footer h4 {
@@ -768,6 +782,7 @@ footer h4 {
 
 .faq h2 {
   width: 100%;
+  font-size: 3em;
 }
 .faq h4,
 .faq p {
